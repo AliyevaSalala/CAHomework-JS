@@ -72,16 +72,27 @@
 
 //6)0 - 100 arası yalnız sadə ədədləri console'da çap edin.
 
+// for ( let i = 2; i <= 100; i++) {
+//   for ( let j = 2; j <= 100; j++) 
+//     if (i % j === 0) break
+//     if (i === j) console.log(i);
+ 
+// }
+
+
 //7) 0 - 100 arası tək ədədlərin və cüt ədədlərin cəmini tapın.
 
-let count ;
-let oddSum = 0;
-let evenSum = 0;
-for (let index = 1; index < 100; index++) {
-  if (index % 2 === 1) {
-    count++;
-    console.log(`${oddSum} tek ededlerin cemi`);
-  } else {
-    console.log(`${evenSum} cüt ededlerin cemi`);
-  }
-}
+// let oddSum = 0;
+// let evenSum = 0;
+// for (let index = 1; index < 100; index++) {
+//   if (index % 2 !== 0) {
+//     oddSum += index;
+//   }
+// }
+// console.log(`${oddSum} tek ededlerin cemi`);
+// for (let index = 0; index < 100; index++) {
+//   if (index % 2 === 0) {
+//     evenSum += index;
+//   }
+// }
+// console.log(`${evenSum} cut ededlerin cemi`);
