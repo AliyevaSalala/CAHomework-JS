@@ -13,17 +13,18 @@ let numbers = [12, 7, 3, 9, 6, 15, 8];
 //---------Task-2
 //--------Verilmiş array-in min elementi ilə max elementinin yerini dəyişən proqram tərtib edin
 
-// let max = numbers[0];
-// let min = numbers[0];
+// let maxIndex = 0;
+// let minIndex = 0;
+
 // for (let i = 1; i < numbers.length; i++) {
-//   if (numbers[i] < min) {
-//     min = numbers[i];
-//   } else if (numbers[i] > max) {
-//     max = numbers[i];
+//   if (numbers[i] < numbers[minIndex]) {
+//     minIndex = i;
+//   } else if (numbers[i] > numbers[maxIndex]) {
+//     maxIndex = i;
 //   }
-//   let temp = max;
-//   max = min;
-//   min = temp;
+//   let temp = numbers[maxIndex];
+//   numbers[maxIndex] = numbers[minIndex];
+//   numbers[minIndex] = temp;
 // }
 // console.log(numbers);
 
@@ -81,42 +82,55 @@ const employees = [
 
 // const newEmployess= [];
 // for (let i = 0; i < employees.length; i++) {
-// newEmployess.push(employees[i].department==="HR")
+// if(employees[i].department==="HR"){
+//   newEmployess.push(employees[i])
+// }
 
 // }console.log(newEmployess);
 
-
 //------------Task-7
- 
 
 //---------- Ölkələrin neçə hərfdən ibarət olduğunu çap edən proqram yazırsınız. Cavab konsolda bu şəkildə olmalıdır:
 
-
 let countries = [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Andorra",
-    "Angola",
-    "Austria",
-    "Azerbaijan",
-    "Bahamas",
-    "Bahrain",
-    "Brazil",
-    "British Virgin Islands",
-    "Brunei",
-    "Bulgaria",
-    "Burkina Faso",
-    "Burundi",
-    "Estonia",
-    "Ethiopia",
-    "Falkland Islands",
-    "Faroe Islands"
-  ];
-  
+  "Afghanistan",
+  "Albania",
+  "Algeria",
+  "Andorra",
+  "Angola",
+  "Austria",
+  "Azerbaijan",
+  "Bahamas",
+  "Bahrain",
+  "Brazil",
+  "British Virgin Islands",
+  "Brunei",
+  "Bulgaria",
+  "Burkina Faso",
+  "Burundi",
+  "Estonia",
+  "Ethiopia",
+  "Falkland Islands",
+  "Faroe Islands",
+];
 
+console.log(countries.length)
+//---------Task-8
 
+// -------------Baş hərfi ilə son hərfi A olan  ölkələrin adını çap edən proqram yazırsınız
 
-  //---------Task-8
+// const newCountries= [];
+// for (let i = 0; i < countries.length; i++) {
+// if(countries[i][0]==="A" ){
+//   newCountries.push(countries[i])
+// }
 
-  // -------------Baş hərfi ilə son hərfi A olan  ölkələrin adını çap edən proqram yazırsınız
+// }console.log(newCountries);
+
+// const newCountries= [];
+// for (let i = 0; i < countries.length; i++) {
+// if(countries[i][5]==="a" ){
+//   newCountries.push(countries[i])
+// }
+
+// }console.log(newCountries);
