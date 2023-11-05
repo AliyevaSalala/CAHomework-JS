@@ -114,23 +114,23 @@ let countries = [
   "Faroe Islands",
 ];
 
-console.log(countries.length)
-//---------Task-8
+for (let i = 0; i < countries.length; i++) {
+  console.log(`${countries[i]} - ${countries[i].length}`);
 
-// -------------Baş hərfi ilə son hərfi A olan  ölkələrin adını çap edən proqram yazırsınız
+}
 
-// const newCountries= [];
-// for (let i = 0; i < countries.length; i++) {
-// if(countries[i][0]==="A" ){
-//   newCountries.push(countries[i])
-// }
+//------------------------Task-8---------------------
 
-// }console.log(newCountries);
+// -----------------------Baş hərfi ilə son hərfi A olan  ölkələrin adını çap edən proqram yazırsınız
 
-// const newCountries= [];
-// for (let i = 0; i < countries.length; i++) {
-// if(countries[i][5]==="a" ){
-//   newCountries.push(countries[i])
-// }
 
-// }console.log(newCountries);
+const newCountries = [];
+for (let i = 0; i < countries.length; i++) {
+  if (
+    countries[i].toLocaleLowerCase()[0] === "a" &&
+    countries[i].toLocaleUpperCase()[countries[i].length - 1] === "A"
+  ) {
+    newCountries.push(countries[i]);
+  }
+}
+console.log(newCountries);
