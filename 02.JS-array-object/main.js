@@ -116,21 +116,29 @@ let countries = [
 
 for (let i = 0; i < countries.length; i++) {
   console.log(`${countries[i]} - ${countries[i].length}`);
-
 }
 
 //------------------------Task-8---------------------
 
 // -----------------------Baş hərfi ilə son hərfi A olan  ölkələrin adını çap edən proqram yazırsınız
 
+// const newCountries = [];
+// for (let i = 0; i < countries.length; i++) {
+//   if (
+//     countries[i].toLocaleLowerCase()[0] === "a" &&
+//     countries[i].toLocaleUpperCase()[countries[i].length - 1] === "A"
+//   ) {
+//     newCountries.push(countries[i]);
+//   }
+// }
+// console.log(newCountries);
 
-const newCountries = [];
-for (let i = 0; i < countries.length; i++) {
-  if (
-    countries[i].toLocaleLowerCase()[0] === "a" &&
-    countries[i].toLocaleUpperCase()[countries[i].length - 1] === "A"
-  ) {
-    newCountries.push(countries[i]);
+let sampleNews =
+  "As software developers, the natural tendency is to start developing applications based on your own hand-on experience and knowledge right away. However, overtime issues in the application arise,";
+let newSample=0;
+for (let i = 0; i < sampleNews.length; i++) {
+  if (sampleNews[i] === " ") {
+    newSample++;
   }
 }
-console.log(newCountries);
+console.log(newSample);
