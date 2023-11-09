@@ -1,0 +1,26 @@
+#header {
+  background-color: $primary-color;
+  padding: 1rem 0;
+.header{
+  @include flexbox();
+  .fa-solid {
+    margin-right: 10px;
+    color: $color-white;
+  }
+  .phone {
+    color: $color-white;
+  }
+  nav {
+    ul {
+      display: flex;
+      gap: 30px;
+      li {
+        a {
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
+ 
+}

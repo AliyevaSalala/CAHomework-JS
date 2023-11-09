@@ -1,0 +1,41 @@
+#section-four {
+  padding: 2.5rem 0;
+  .section-four {
+    @include flexbox();
+    .card {
+      background-color: $color-card-bg;
+    //   width: 25%;
+      img {
+        width: 163px;
+        left: 321px;
+      }
+    }
+  }
+  .section-four-bottom{
+    // margin-top: 20px 0;
+    padding: 1.5rem 0;
+    .card-two{
+        display: flex;
+        gap: 20px;
+        .card{
+            width: 40%;
+            position: relative;
+            .button{
+                position: absolute;
+                top: 0px;
+            }
+            .fa-regular{
+                position: absolute;
+                top: 0px;
+                color: $color-pink;
+            }
+            .lorem{
+                p{
+                    width: 302px;
+                }
+            }
+
+        }
+    }
+  }
+}
