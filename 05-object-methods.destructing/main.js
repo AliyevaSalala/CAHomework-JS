@@ -39,10 +39,13 @@ console.log(allTrue);
 
 //5. Arraydaki en boyuk reqemi tapan ve nece defe tekrarlandigini gosteren funksiya yazın.
 
-
-function findMaxDigitOfArray(array, number) {
+let max=Math.max(...arr)
+function findMaxDigitOfArray(arr, number) {
   let count = 0;
-  arr.forEach((num) => num === number && count++);
+  arr.forEach((num) => num === max && count++);
   return count;
 }
-console.log(` ${Math.max(...arr)}  ${findMaxDigitOfArray(arr, 7)}`);
+
+console.log(findMaxDigitOfArray(arr));
+// console.log(` ${Math.max(...arr)}  ${findMaxDigitOfArray(arr, 7)}`);
+
