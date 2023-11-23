@@ -99,7 +99,8 @@ let arr = [
 
 // console.log(firstItem.name);
 
-// let max = arr[0].name.length;
+// let 
+max = arr[0].name.length;
 // let maxIndex = 0;
 // for (let i = 0; i < arr.length; i++) {
 //   if (arr[i].name.length > max) {

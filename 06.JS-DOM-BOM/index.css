@@ -1,12 +1,29 @@
-body {
+.container {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  background-color: pink;
 }
 
+.container-2 {
+  width: 500px;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
 .number {
   text-align: end;
+}
+
+.input-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.input-div input {
+  width: 40%;
 }
