@@ -14,5 +14,5 @@ window.addEventListener("scroll", function () {
 menuIcon.onclick = function () {
   dropDown.classList.toggle("open");
   let isOpen = dropDown.classList.contains("open");
-  menuIconsI.classList = isOpen ? "fa-solid fa-x" : "fa-solid fa-bars";
+  isOpen ? menuIconsI.classList("fa-x") : menuIconsI.classList("fa-bars");
 };
