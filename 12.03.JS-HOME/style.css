@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+header {
+  background-color: pink;
+  padding: 1.5rem 0;
+}
+header h1 {
+  text-align: end;
+  color: blue;
+}
+header h1 sup {
+  /* color: #fff;
+    background-color: red;
+    border-radius: 50%;
+    padding: 3px 5px; */
+  color: red;
+}
+
+/* section */
+
+section {
+  padding: 1.5rem 0;
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.boxes .box {
+  width: 25%;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.box .box-icon {
+  display: flex;
+  justify-content: space-between;
+}
+.box-icon i {
+  color: red;
+}
