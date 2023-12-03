@@ -71,7 +71,7 @@ const products = [
 let boxes = document.querySelector(".boxes");
 // console.log(boxes);
 
-let boxesAll = JSON.parse(localStorage.getItem("boxesAll")) ?? [];
+let favorite = getProductsToLocalSotarge() ?? [];
 function drawBoxes(data) {
   boxes.innerHTML = "";
   data.forEach((element) => {
@@ -95,10 +95,28 @@ drawBoxes(products);
 
 function addToFav(id) {
   // console.log(id);
+
   let product = products.find((item) => {
-    return console.log(product);
+    return item.id == id;
   });
-  //   boxesAll.push(product);
-  //   localStorage.setItem("boxesALL", JSON.stringify(boxesAll));
-  //   console.log(product);
+
+  let index = favorite?.findIndex((item) => {
+    return item.product.id == id;
+  });
+  if (index > -1) {
+    favorite[index].count = favorite[index].count + 1;
+    console.log(favorite[index]);
+  } else {
+    favorite.push({ count: 1, product: product });
+  }
+
+  setProductsToLocalSotarge(favorite);
 }
+
+function setProductsToLocalSotarge(arr) {
+  localStorage.setItem("boxesALL", JSON.stringify(arr));
+}
+function getProductsToLocalSotarge() {
+  return JSON.parse(localStorage.getItem("boxesAll"));
+}
+
