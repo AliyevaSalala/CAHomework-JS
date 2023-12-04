@@ -9,7 +9,7 @@ function drawBoxes(data) {
     divElem.innerHTML = `
       <div class="box-icon">
       <h4>${element.product.title}</h4>
-       <i onclick=addToRemove(this, ${element.product.id}) class="fa-solid fa-heart"></i>
+       <i class="fa-solid fa-heart" onclick=addToRemove(${element.product.id},this) ></i>
     </div>
     <p>${element.product.price}</p>
     <p>
@@ -29,9 +29,9 @@ function getProductsToLocalSotarge() {
   return JSON.parse(localStorage.getItem("boxesALL"));
 }
 
-function addToRemove(i, id) {
+function addToRemove(id, i) {
   favorite = favorite.filter((item) => item.product.id !== id);
   setProductsToLocalSotarge(favorite);
-  i.parentElement.remove();
-  // console.log(favorite);
+  i.parentElement.parentElement.remove();
+  console.log(i);
 }
