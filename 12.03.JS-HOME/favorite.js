@@ -9,7 +9,7 @@ function drawBoxes(data) {
     divElem.innerHTML = `
       <div class="box-icon">
       <h4>${element.product.title}</h4>
-      <a href="#" onclick=addToFav(${element.product.id})> <i class="fa-regular fa-heart"></i></a>
+      <a href="#" onclick=addToRemove(this, ${element.product.id})> <i class="fa-solid fa-heart"></i></a>
     </div>
     <p>${element.product.price}</p>
     <p>
@@ -20,13 +20,18 @@ function drawBoxes(data) {
   });
 }
 
-
-
 drawBoxes(favorite);
 function setProductsToLocalSotarge(arr) {
   localStorage.setItem("boxesALL", JSON.stringify(arr));
 }
 
 function getProductsToLocalSotarge() {
-  return JSON.parse(localStorage.getItem("boxesAll"));
+  return JSON.parse(localStorage.getItem("boxesALL"));
+}
+
+function addToRemove(i, id) {
+  favorite = favorite.filter((item) => item.product.id !== Number(id));
+  setProductsToLocalSotarge(favorite);
+  i.parentElement.parentElement.parentElement.remove();
+  console.log(favorite);
 }

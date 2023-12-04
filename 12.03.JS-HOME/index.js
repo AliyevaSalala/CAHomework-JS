@@ -117,6 +117,5 @@ function setProductsToLocalSotarge(arr) {
   localStorage.setItem("boxesALL", JSON.stringify(arr));
 }
 function getProductsToLocalSotarge() {
-  return JSON.parse(localStorage.getItem("boxesAll"));
+  return JSON.parse(localStorage.getItem("boxesALL"));
 }
-
