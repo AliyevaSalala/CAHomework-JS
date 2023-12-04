@@ -80,7 +80,7 @@ function drawBoxes(data) {
     divElem.innerHTML = `
     <div class="box-icon">
     <h4>${element.title}</h4>
-    <a href="#" onclick=addToFav(${element.id})> <i class="fa-regular fa-heart"></i></a>
+     <i onclick=addToFav(${element.id}) class="fa-regular fa-heart"></i>
   </div>
   <p>${element.price}</p>
   <p>
