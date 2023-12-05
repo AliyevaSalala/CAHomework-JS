@@ -1,39 +1,7 @@
-//-----------API supp
-
-// const BASE_URL = "https://northwind.vercel.app/api";
-
-// function getAllData() {
-//   fetch(`${BASE_URL}/suppliers`)
-//     .then((res) => res.json())
-//     .then((data) => console.log(data))
-//     .catch((err) => console.log(err));
-// }
-// getAllData();
-
-// function addNewData(endpoint, obj) {
-//   fetch(`${BASE_URL}/${endpoint}`, {
-//     method: "POST",
-//     headers: {
-//       "Content-type": "application/json",
-//     },
-//     body: JSON.stringify(obj),
-//   });
-// }
-
-// let obj = {
-//   companyName: "Sharifa",
-//   contactName: "Aliyevaa",
-//   address: {
-//     city: "Ganja",
-//     country: "AZerbaycan",
-//     phone: "055665656",
-//   },
-// };
-// addNewData("suppliers", obj);
 
 // --------------------------------------HOMEWORK
-
-const BASE_URL = "https://api.escuelajs.co/api/v1";
+const BASE_URL = "https://northwind.vercel.app/api";
+// const BASE_URL = "https://api.escuelajs.co/api/v1";
 
 let form = document.querySelector("form");
 let productsDiv = document.querySelector(".products-div");
@@ -48,7 +16,7 @@ function getAllData(endpoint) {
       console.log(err);
     });
 }
-getAllData("products");
+getAllData("suppliers");
 
 function drawCards(arr) {
   productsDiv.innerHTML = "";
@@ -80,14 +48,14 @@ form.addEventListener("submit", function (e) {
   };
   console.log(obj);
 
-  fetch(`${BASE_URL}/products`, {
+  fetch(`${BASE_URL}/suppliers`, {
     method: "POST",
     headers: {
       "Content-type": "application/json",
     },
     body: JSON.stringify(obj),
   }).then(() => {
-    fetch(`${BASE_URL}/products`)
+    fetch(`${BASE_URL}/suppliers`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -104,5 +72,5 @@ function deleteProduct(productId, deleteBtn) {
     method: "DELETE",
   });
     console.log(deleteBtn);
-  //   deleteBtn.closest(".productsDiv").remove();
+    deleteBtn.closest(".productsDiv").remove();
 }
