@@ -1,0 +1,69 @@
+{
+  "blogs": [
+    {
+      "title": "SHARIFA",
+      "body": "Aliyeva, yatma ders oxu",
+      "author": "lorem",
+      "id": 3
+    },
+    {
+      "title": "Gulnar",
+      "body": "Babakisyeva",
+      "author": "",
+      "id": 4
+    },
+    {
+      "title": "Sebnem",
+      "body": "Ibrahimova",
+      "author": "",
+      "id": 5
+    },
+    {
+      "title": "sebnem ibrahimova",
+      "body": "Sebenem Ibrahimova",
+      "author": " lorem",
+      "id": 6
+    },
+    {
+      "title": "seboo",
+      "body": "Sebenem seboo  Ibrahimova",
+      "author": " lorem",
+      "id": 7
+    },
+    {
+      "title": "seboo",
+      "body": "Sseboo  Ibrahimova",
+      "author": " lorem",
+      "id": 8
+    },
+    {
+      "title": "serife sebo sero",
+      "body": "Sseboo  Ibrahimova",
+      "author": " lorem",
+      "id": 9
+    },
+    {
+      "title": "yemek",
+      "body": "ders oxu sharifa",
+      "id": 10
+    },
+    {
+      "title": "Qui dolore ipsum a ",
+      "body": "Aute id dolor dolor ",
+      "author": "ipsum",
+      "id": 11
+    },
+    {
+      "title": "Nostrud voluptas non",
+      "body": "Rem fugit fugit po",
+      "author": "dolor",
+      "id": 12
+    },
+    {
+      "title": "8 dekabr",
+      "body": "ben sabah derse gedcem yene saat 8:00(",
+      "author": "dolor",
+      "id": 13
+    }
+  ]
+}

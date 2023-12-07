@@ -1,4 +1,3 @@
-
 // --------------------------------------HOMEWORK
 const BASE_URL = "https://northwind.vercel.app/api";
 // const BASE_URL = "https://api.escuelajs.co/api/v1";
@@ -30,7 +29,7 @@ function drawCards(arr) {
             <p class="title">${element.title}</p>
             <p class="description">${element.description}</p>
             <span>${element.price}</span>
-            <div><button class="deleteBtn" onclick=deleteProduct(${element.id})>Delete</button></div>
+            <div><button class="deleteBtn" onclick=deleteProduct(${element.id},this)>Delete</button></div>
           </div>
         </div>
     `;
@@ -68,9 +67,9 @@ form.addEventListener("submit", function (e) {
 });
 
 function deleteProduct(productId, deleteBtn) {
-  fetch(`${BASE_URL}/products/${productId}`, {
+  fetch(`${BASE_URL}/suppliers/${productId}`, {
     method: "DELETE",
   });
-    console.log(deleteBtn);
-    deleteBtn.closest(".productsDiv").remove();
+  console.log(deleteBtn);
+  // deleteBtn.closest(".productsDiv").remove();
 }
