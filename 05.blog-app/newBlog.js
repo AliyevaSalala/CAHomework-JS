@@ -23,6 +23,9 @@ if (id) {
   getData();
 }
 
+
+
+
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   let newBlogs = {
@@ -38,3 +41,13 @@ form.addEventListener("submit", function (e) {
 
   input.forEach((item) => (item.value = ""));
 });
+
+
+
+
+option.addEventListener("change", function (e) {
+  authorName = e.target.value;
+  console.log(authorName);
+});
+
+
