@@ -23,31 +23,29 @@ if (id) {
   getData();
 }
 
-
-
-
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   let newBlogs = {
     title: input.value,
     body: textarea.value,
-    author: option.value,
+    author: authorName,
   };
   if (!id) {
-    axios.post(`${BASE_URL}/blogs`, newBlogs);
+    if (input.value != "" && textarea.value != "") {
+      axios.post(`${BASE_URL}/blogs`, newBlogs);
+    } else {
+      window.alert("bos buraxila bilmez");
+    }
   } else {
     axios.patch(`${BASE_URL}/blogs/${id}`, newBlogs);
   }
 
-  input.forEach((item) => (item.value = ""));
+  // input.forEach((item) => (item.value = ""));
+  input.value = "";
+  window.location = "home.html";
 });
-
-
-
 
 option.addEventListener("change", function (e) {
   authorName = e.target.value;
   console.log(authorName);
 });
-
-

@@ -7,15 +7,9 @@
       "id": 3
     },
     {
-      "title": "Hic cum molestias qu",
-      "body": "Laborum Qui incidun",
-      "author": "ipsum",
-      "id": 5
-    },
-    {
       "title": "seboo",
-      "body": "Sebenem seboo  Ibrahimova",
-      "author": " lorem",
+      "body": "Sebenem seboo  Ibrahimova\najajaja",
+      "author": "dolor",
       "id": 7
     },
     {
@@ -33,19 +27,8 @@
     {
       "title": "yemek",
       "body": "ders oxu sharifa",
-      "id": 10
-    },
-    {
-      "title": "Qui dolore ipsum a ",
-      "body": "Aute id dolor dolor ",
-      "author": "ipsum",
-      "id": 11
-    },
-    {
-      "title": "Nostrud voluptas non",
-      "body": "Rem fugit fugit po",
-      "author": "dolor",
-      "id": 12
+      "id": 10,
+      "author": "lorem"
     },
     {
       "title": "8 dekabr",
@@ -54,16 +37,34 @@
       "id": 13
     },
     {
-      "title": "Aliquam velit debit",
-      "body": "Dignissimos dolorem ",
-      "author": "dolor",
-      "id": 15
-    },
-    {
       "title": "9 dekabr",
       "body": "sharifa dogum gunudur, tebrik ede bilersiz dostlar",
       "author": "ipsum",
       "id": 16
+    },
+    {
+      "title": "code academy",
+      "body": "saat 8:42 ben dersdeyim ve acam",
+      "author": "ipsum",
+      "id": 17
+    },
+    {
+      "title": "task yoxlandi",
+      "body": "ama sehvlerim var yaxsi oxu",
+      "author": "dolor",
+      "id": 18
+    },
+    {
+      "title": "Omnis dolorum invent",
+      "body": "Do laborum Dolorum ",
+      "author": "dolor",
+      "id": 19
+    },
+    {
+      "title": "Dolorem hic a iusto ",
+      "body": "Optio consectetur ",
+      "author": "dolor",
+      "id": 20
     }
   ]
 }
