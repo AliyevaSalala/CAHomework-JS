@@ -5,7 +5,7 @@ const search = document.querySelector("#search");
 
 async function getAllData() {
   const res = await axios(`${BASE_URL}`);
-  console.log(res.data);
+  // console.log(res.data.results);
   drawCard(res.data.results);
 }
 getAllData();
@@ -28,4 +28,5 @@ search.addEventListener("input", async function (e) {
       .includes(e.target.value.toLocaleLowerCase());
   });
   drawCard(filtered);
+  // console.log(filtered);
 });
